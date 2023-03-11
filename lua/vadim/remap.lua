@@ -91,3 +91,6 @@ vim.keymap.set('n', '-', '<C-x>')
 
 --Colorizer
 vim.keymap.set('n', '<leader><leader>c', '<cmd>ColorToggle<CR>')
+
+--myGreetingLua
+vim.keymap.set('n', '<leader><leader>g', '<cmd>luafile ~/.config/nvim/lua/vadim/mylua.lua<CR>')
