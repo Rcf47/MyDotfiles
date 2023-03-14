@@ -1,6 +1,6 @@
-function Greeting()
-  local greeting = "Hello Vadim Cherepanov"
-  print(greeting)
+function Greetings()
+  local greetings = "Hello Vadim "
+  print(greetings)
 end
 
-Greeting()
+Greetings()
