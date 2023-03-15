@@ -115,5 +115,6 @@ vim.keymap.set("n", "<leader><leader><leader>", "<cmd>Git add .<CR><cmd>echo 'gi
 vim.keymap.set("n", "<leader>gci", '<cmd>Git commit<CR>', { desc = ':Git commit' })
 vim.keymap.set("n", "<leader>gb", '<cmd>Git branch<CR>', { desc = ':Git branch' })
 vim.keymap.set("n", "<leader>gt", '<cmd>Git stash<CR>', { desc = ':Git stash' })
-vim.keymap.set("v", "<leader>gg", ":'<,'>diffget<CR>", { desc = ':diffget' })
-vim.keymap.set("v", "<leader>gp", ":'<,'>diffput<CR>", { desc = ':diffput' })
+vim.keymap.set("n", "<leader>gp", '<cmd>Git push<CR>', { desc = ':Git push' })
+vim.keymap.set("v", "<leader>dg", ":'<,'>diffget<CR>", { desc = ':diffget' })
+vim.keymap.set("v", "<leader>dp", ":'<,'>diffput<CR>", { desc = ':diffput' })
