@@ -81,4 +81,12 @@ return require('packer').startup(function(use)
     run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
   }
   use 'chrisbra/Colorizer'
+  --diffview
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
+  --gitsigns
+  use {
+    'lewis6991/gitsigns.nvim',
+    -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+  }
 end)

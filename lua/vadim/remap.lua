@@ -65,8 +65,6 @@ vim.keymap.set('i', '<a-k>', '<up>')
 --Save
 vim.keymap.set({ "i", "n" }, "<a-s>", "<cmd>wa<CR><cmd>echo 'Save'<CR> ", { desc = "Save all" })
 
---:buffers
-vim.keymap.set('n', '<leader>b', "<cmd>Telescope buffers<CR>", { desc = 'buffers' })
 
 --:nohlsearch
 vim.keymap.set('n', '<leader>h', '<cmd>nohlsearch<CR>', { desc = ':nohlsearch' })
@@ -91,3 +89,31 @@ vim.keymap.set('n', '<leader><leader>c', '<cmd>ColorToggle<CR>', { desc = 'highl
 --myGreetingLua
 vim.keymap.set('n', '<leader><leader>g', '<cmd>luafile ~/.config/nvim/lua/vadim/mylua.lua<CR>',
   { desc = 'Hello Vadim lua function' })
+
+--Diffview
+vim.keymap.set('n', '<leader>do', '<cmd>DiffviewOpen<CR>', { desc = ':DiffviewOpen' })
+vim.keymap.set('n', '<leader>dc', '<cmd>DiffviewClose<CR>', { desc = ':DiffviewClose' })
+
+--Telescope
+vim.keymap.set('n', '<leader>b', "<cmd>Telescope buffers<CR>", { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>td', '<cmd>Telescope diagnostics<CR>', { desc = 'Telescope diagnostics' })
+vim.keymap.set('n', '<leader>tk', '<cmd>Telescope keymaps<CR>', { desc = 'Telescope keymaps' })
+
+--gitsigns
+vim.keymap.set('n', '<leader>hn', '<cmd>Gitsigns next_hunk<CR>', { desc = 'next_hunk' })
+vim.keymap.set('n', '<leader>hp', '<cmd>Gitsigns prev_hunk<CR>', { desc = 'prev_hunk' })
+vim.keymap.set('n', '<leader>hs', '<cmd>Gitsigns stage_hunk<CR>', { desc = 'stage_hunk' })
+vim.keymap.set('n', '<leader>hu', '<cmd>Gitsigns undo_stage_hunk<CR>', { desc = 'undo_stage_hunk' })
+vim.keymap.set('n', '<leader>hb', '<cmd>Gitsigns blame_line<CR>', { desc = 'blame_line' })
+vim.keymap.set('n', '<leader>hsb', '<cmd>Gitsigns stage_buffer<CR><cmd> echo "stage buffer"<CR>',
+  { desc = 'stage_buffer' })
+vim.keymap.set('n', '<leader>hph', '<cmd>Gitsigns preview_hunk<CR>', { desc = 'preview_hunk' })
+
+--fuggitive
+vim.keymap.set("n", "<leader>gs", '<cmd>Git<CR>', { desc = ':Git status' })
+vim.keymap.set("n", "<leader><leader><leader>", "<cmd>Git add .<CR><cmd>echo 'git add '<CR>", { desc = ':Git add .' })
+vim.keymap.set("n", "<leader>gci", '<cmd>Git commit<CR>', { desc = ':Git commit' })
+vim.keymap.set("n", "<leader>gb", '<cmd>Git branch<CR>', { desc = ':Git branch' })
+vim.keymap.set("n", "<leader>gt", '<cmd>Git stash<CR>', { desc = ':Git stash' })
+vim.keymap.set("v", "<leader>gg", ":'<,'>diffget<CR>", { desc = ':diffget' })
+vim.keymap.set("v", "<leader>gp", ":'<,'>diffput<CR>", { desc = ':diffput' })
