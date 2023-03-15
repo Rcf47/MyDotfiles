@@ -109,7 +109,7 @@ vim.keymap.set('n', '<leader>hsb', '<cmd>Gitsigns stage_buffer<CR><cmd> echo "st
   { desc = 'stage_buffer' })
 vim.keymap.set('n', '<leader>hph', '<cmd>Gitsigns preview_hunk<CR>', { desc = 'preview_hunk' })
 
---fuggitive
+--fugitive
 vim.keymap.set("n", "<leader>gs", '<cmd>Git<CR>', { desc = ':Git status' })
 vim.keymap.set("n", "<leader><leader><leader>", "<cmd>Git add .<CR><cmd>echo 'git add '<CR>", { desc = ':Git add .' })
 vim.keymap.set("n", "<leader>gci", '<cmd>Git commit<CR>', { desc = ':Git commit' })
