@@ -119,3 +119,6 @@ vim.keymap.set("n", "<leader>gp", '<cmd>Git push<CR>', { desc = ':Git push' })
 --visual fugitive
 vim.keymap.set("v", "<leader>dg", ":'<,'>diffget<CR>", { desc = ':diffget' })
 vim.keymap.set("v", "<leader>dp", ":'<,'>diffput<CR>", { desc = ':diffput' })
+
+--toggleterminal
+vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<CR>', { desc = ':ToggleTerm' })
