@@ -8,4 +8,6 @@ wk.register({
       ["<leader>g"] = { name = "+Fugitive git" },
       ["<leader>h"] = { name = "+Gitsigns" },
       ["s"] = { name = "+Split window" },
+      ["<leader><leader>"] = { name = "+Highlight color" },
+      ["<leader>l"] = { name = "+Lazygit" },
 })

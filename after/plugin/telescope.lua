@@ -1,7 +1,7 @@
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>tf', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = 'Telescope git files' })
-vim.keymap.set('n', '<leader>ps', function()
+vim.keymap.set('n', '<leader>tg', function()
   builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end, { desc = 'Telescope grep' })
 
@@ -53,7 +53,7 @@ telescope.setup {
 telescope.load_extension("file_browser")
 
 
-vim.keymap.set("n", "sf", function()
+vim.keymap.set("n", "<leader>tn", function()
   telescope.extensions.file_browser.file_browser({
     path = "%:p:h",
     cwd = telescope_buffer_dir(),
