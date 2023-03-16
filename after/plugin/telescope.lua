@@ -1,9 +1,9 @@
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
-vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = 'Telescope git files' })
 vim.keymap.set('n', '<leader>ps', function()
   builtin.grep_string({ search = vim.fn.input("Grep > ") });
-end)
+end, { desc = 'Telescope grep' })
 
 
 local status, telescope = pcall(require, "telescope")
@@ -64,6 +64,6 @@ vim.keymap.set("n", "sf", function()
     initial_mode = "normal",
     layout_config = { height = 40 }
   })
-end)
+end, { desc = 'Telescope file browser' })
 
 telescope.load_extension('lazygit')

@@ -6,17 +6,11 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "J", "mzJ`z")
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = 'smooth scroll' })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = 'smooth scroll' })
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", "<leader>vwm", function()
-  require("vim-with-me").StartVimWithMe()
-end)
-vim.keymap.set("n", "<leader>svwm", function()
-  require("vim-with-me").StopVimWithMe()
-end)
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -95,7 +89,7 @@ vim.keymap.set('n', '<leader>do', '<cmd>DiffviewOpen<CR>', { desc = ':DiffviewOp
 vim.keymap.set('n', '<leader>dc', '<cmd>DiffviewClose<CR>', { desc = ':DiffviewClose' })
 
 --Telescope
-vim.keymap.set('n', '<leader>b', "<cmd>Telescope buffers<CR>", { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>tb', "<cmd>Telescope buffers<CR>", { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>td', '<cmd>Telescope diagnostics<CR>', { desc = 'Telescope diagnostics' })
 vim.keymap.set('n', '<leader>tk', '<cmd>Telescope keymaps<CR>', { desc = 'Telescope keymaps' })
 

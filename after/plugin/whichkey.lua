@@ -7,4 +7,5 @@ wk.register({
       ["<leader>tk"] = { "<cmd>Telescope keymaps<cr>", "Telescope keymaps" },
       ["<leader>g"] = { name = "+Fugitive git" },
       ["<leader>h"] = { name = "+Gitsigns" },
+      ["s"] = { name = "+Split window" },
 })
