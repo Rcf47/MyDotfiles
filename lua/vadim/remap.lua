@@ -122,3 +122,6 @@ vim.keymap.set("v", "<leader>dp", ":'<,'>diffput<CR>", { desc = ':diffput' })
 
 --toggleterminal
 vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<CR>', { desc = ':ToggleTerm' })
+
+--lazygit
+vim.keymap.set('n', '<leader>lg', '<cmd>LazyGit<CR>', { desc = ':LazyGit' })
