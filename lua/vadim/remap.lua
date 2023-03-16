@@ -111,11 +111,12 @@ vim.keymap.set('n', '<leader>hph', '<cmd>Gitsigns preview_hunk<CR>', { desc = 'p
 
 --fugitive
 vim.keymap.set("n", "<leader>gs", '<cmd>Git<CR>', { desc = ':Git status' })
-vim.keymap.set("n", "<leader><leader><leader>", "<cmd>Git add .<CR><cmd>echo 'git add '<CR>", { desc = ':Git add .' })
+vim.keymap.set("n", "<leader><leader><leader>", "<cmd>Gwrite<CR><cmd>echo 'Gwirte'<CR>", { desc = ':Gwrite' })
 vim.keymap.set("n", "<leader>gci", '<cmd>Git commit<CR>', { desc = ':Git commit' })
 vim.keymap.set("n", "<leader>gb", '<cmd>Git branch<CR>', { desc = ':Git branch' })
 vim.keymap.set("n", "<leader>gt", '<cmd>Git stash<CR>', { desc = ':Git stash' })
 vim.keymap.set("n", "<leader>gp", '<cmd>Git push<CR>', { desc = ':Git push' })
+vim.keymap.set("n", "<leader>gd", '<cmd>Gvdiffsplit<CR>', { desc = ':Gvdiffsplit' })
 --visual fugitive
 vim.keymap.set("v", "<leader>dg", ":'<,'>diffget<CR>", { desc = ':diffget' })
 vim.keymap.set("v", "<leader>dp", ":'<,'>diffput<CR>", { desc = ':diffput' })
