@@ -74,7 +74,7 @@ vim.keymap.set('n', '<F5>', function() require('dap').continue() end, { desc = '
 vim.keymap.set('n', '<F6>', function() require('dap').step_over() end, { desc = 'step_over' })
 vim.keymap.set('n', '<F7>', function() require('dap').step_into() end, { desc = 'step_into' })
 vim.keymap.set('n', '<F8>', function() require('dap').step_out() end, { desc = 'step_out' })
-vim.keymap.set('n', '<Leader>tb', function() require('dap').toggle_breakpoint() end, { desc = 'toggle breakpoint' })
+vim.keymap.set('n', '<Leader>db', function() require('dap').toggle_breakpoint() end, { desc = 'toggle breakpoint' })
 
 --debugging dap-ui
 vim.keymap.set('n', '<leader>o', "<cmd>lua require('dapui').toggle() <CR>", { desc = 'toggle dapui' })
@@ -111,8 +111,8 @@ vim.keymap.set('n', '<leader>hph', '<cmd>Gitsigns preview_hunk<CR>', { desc = 'p
 
 --fugitive
 vim.keymap.set("n", "<leader>gs", '<cmd>Git<CR>', { desc = ':Git status' })
-vim.keymap.set("n", "<leader><leader><leader>", "<cmd>Gwrite<CR><cmd>echo 'Gwirte'<CR>", { desc = ':Gwrite' })
-vim.keymap.set("n", "<leader>gci", '<cmd>Git commit<CR>', { desc = ':Git commit' })
+vim.keymap.set("n", "<leader>gw", "<cmd>Gwrite<CR><cmd>echo 'Gwirte'<CR>", { desc = ':Gwrite' })
+vim.keymap.set("n", "<leader>gc", '<cmd>Git commit<CR>', { desc = ':Git commit' })
 vim.keymap.set("n", "<leader>gb", '<cmd>Git branch<CR>', { desc = ':Git branch' })
 vim.keymap.set("n", "<leader>gt", '<cmd>Git stash<CR>', { desc = ':Git stash' })
 vim.keymap.set("n", "<leader>gp", '<cmd>Git push<CR>', { desc = ':Git push' })
@@ -122,7 +122,10 @@ vim.keymap.set("v", "<leader>dg", ":'<,'>diffget<CR>", { desc = ':diffget' })
 vim.keymap.set("v", "<leader>dp", ":'<,'>diffput<CR>", { desc = ':diffput' })
 
 --toggleterminal
-vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<CR>', { desc = ':ToggleTerm' })
+--vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<CR>', { desc = ':ToggleTerm' })
 
 --lazygit
 vim.keymap.set('n', '<leader>lg', '<cmd>LazyGit<CR>', { desc = ':LazyGit' })
+
+--undotree
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'Undotree' })
