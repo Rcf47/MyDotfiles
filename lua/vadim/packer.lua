@@ -107,4 +107,7 @@ return require('packer').startup(function(use)
       }
     end
   }
+
+  --Pathogen for telescope navigation
+  use 'brookhong/telescope-pathogen.nvim'
 end)

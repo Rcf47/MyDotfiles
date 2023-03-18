@@ -67,3 +67,4 @@ vim.keymap.set("n", "<leader>tn", function()
 end, { desc = 'Telescope file browser' })
 
 telescope.load_extension('lazygit')
+telescope.load_extension('pathogen')
