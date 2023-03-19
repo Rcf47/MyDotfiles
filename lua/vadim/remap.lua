@@ -13,14 +13,12 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 
 -- greatest remap ever
-vim.keymap.set("x", "<leader>p", [["_dP]])
 --vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 --vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
@@ -127,8 +125,12 @@ vim.keymap.set('n', '<leader>lg', '<cmd>LazyGit<CR>', { desc = ':LazyGit' })
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'Undotree' })
 
 --pathogen telescope extension
-vim.keymap.set('v', '<space>g', require("telescope").extensions["pathogen"].grep_string, { desc = 'pathogen grep_string' })
-vim.keymap.set('n', "<space>a", ":Telescope pathogen live_grep<CR>", { silent = true })
-vim.keymap.set('n', "<C-p>", ":Telescope pathogen<CR>", { silent = true })
-vim.keymap.set('n', "<C-f>", ":Telescope pathogen find_files<CR>", { silent = true })
-vim.keymap.set('n', "<space>g", ":Telescope pathogen grep_string<CR>", { silent = true })
+vim.keymap.set('v', '<leader>tg', require("telescope").extensions["pathogen"].grep_string,
+  { desc = 'pathogen grep_string' })
+vim.keymap.set('n', "<leader>tlg", ":Telescope pathogen live_grep<CR>",
+{ silent = true, desc = 'Telescope path live grep' })
+vim.keymap.set('n', "<leader>tp", ":Telescope pathogen<CR>", { silent = true, desc = 'Telescope pathogen' })
+vim.keymap.set('n', "<leader>tf", ":Telescope pathogen find_files<CR>",
+{ silent = true, desc = 'Telescope path find files' })
+vim.keymap.set('n', "<leader>tg", ":Telescope pathogen grep_string<CR>",
+{ silent = true, desc = 'Telescope path grep string' })
