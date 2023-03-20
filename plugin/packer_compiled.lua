@@ -239,6 +239,16 @@ _G.packer_plugins = {
     path = "/home/vadim/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/vadim/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
+  ["telescope-pathogen.nvim"] = {
+    loaded = true,
+    path = "/home/vadim/.local/share/nvim/site/pack/packer/start/telescope-pathogen.nvim",
+    url = "https://github.com/brookhong/telescope-pathogen.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/vadim/.local/share/nvim/site/pack/packer/start/telescope.nvim",

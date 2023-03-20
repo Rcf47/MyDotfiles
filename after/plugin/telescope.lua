@@ -21,6 +21,14 @@ telescope.setup {
     file_ignore_patterns = {
       "node_modules"
     },
+    -- preview config
+    --    layout_config = {
+    --      horizontal = {
+    --        preview_width = 0.5,
+    --        preview_cutoff = 0,
+    --      },
+    --    },
+    --    layout_strategy = 'flex',
     mappings = {
       n = {
             ["q"] = actions.close
