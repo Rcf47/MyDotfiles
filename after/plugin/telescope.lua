@@ -68,3 +68,4 @@ end, { desc = 'Telescope file browser' })
 
 telescope.load_extension('lazygit')
 telescope.load_extension('pathogen')
+telescope.load_extension('fzf')

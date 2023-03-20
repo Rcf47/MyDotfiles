@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
 
 
   use 'nvim-telescope/telescope-file-browser.nvim'
-
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
