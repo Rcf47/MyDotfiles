@@ -77,3 +77,24 @@ end, { desc = 'Telescope file browser' })
 telescope.load_extension('lazygit')
 telescope.load_extension('pathogen')
 telescope.load_extension('fzf')
+
+local base1 = "#2D3145"
+local base2 = "#32364A"
+local colors = require("catppuccin.palettes").get_palette()
+require("catppuccin.lib.highlighter").syntax({
+  TelescopePromptNormal = { fg = colors.text, bg = base1 },
+  TelescopePromptBorder = { fg = base1, bg = base1 },
+  TelescopePromptTitle = { fg = colors.subtext1, bg = base1 },
+  TelescopeResultsNormal = { fg = colors.subtext1, bg = base1 },
+  TelescopeResultsBorder = { fg = base1, bg = base1 },
+  TelescopeResultsTitle = { fg = colors.subtext1, bg = base1 },
+  TelescopePreviewNormal = { bg = base2 },
+  TelescopePreviewBorder = { fg = base2, bg = base2 },
+  TelescopePreviewTitle = { fg = colors.subtext1, bg = base2 },
+  -- TelescopeMultiSelection = { fg = colors.text, bg = colors.surface1, style = { "bold" }  },
+  -- TelescopeSelection = { fg = colors.text, bg = colors.surface1, style = { "bold" } },
+
+  -- TelescopePromptNormal = { bg = colors.mantle },
+  -- TelescopeResultsNormal = { bg = colors.mantle },
+  -- TelescopePreviewNormal = { bg = colors.mantle },
+})
