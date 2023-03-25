@@ -54,3 +54,6 @@ vim.g.colorizer_auto_color = 1
 --Bg Color
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+--clipboard anywhere
+vim.opt.clipboard = "unnamedplus"
