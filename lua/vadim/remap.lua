@@ -128,9 +128,12 @@ vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'Undotree' })
 vim.keymap.set('v', '<leader>tg', require("telescope").extensions["pathogen"].grep_string,
   { desc = 'pathogen grep_string' })
 vim.keymap.set('n', "<leader>tlg", ":Telescope pathogen live_grep<CR>",
-{ silent = true, desc = 'Telescope path live grep' })
+  { silent = true, desc = 'Telescope path live grep' })
 vim.keymap.set('n', "<leader>tp", ":Telescope pathogen<CR>", { silent = true, desc = 'Telescope pathogen' })
 vim.keymap.set('n', "<leader>tf", ":Telescope pathogen find_files<CR>",
-{ silent = true, desc = 'Telescope path find files' })
+  { silent = true, desc = 'Telescope path find files' })
 vim.keymap.set('n', "<leader>tg", ":Telescope pathogen grep_string<CR>",
-{ silent = true, desc = 'Telescope path grep string' })
+  { silent = true, desc = 'Telescope path grep string' })
+
+--nvimtree
+vim.keymap.set('n', '<leader>nt', '<cmd>NvimTreeToggle<CR>', { desc = 'NvimTreeToggle' })

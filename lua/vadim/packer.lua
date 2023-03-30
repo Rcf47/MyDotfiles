@@ -113,4 +113,7 @@ return require('packer').startup(function(use)
 
   --emmet
   use 'mattn/emmet-vim'
+
+  --file browser
+  use 'nvim-tree/nvim-tree.lua'
 end)
