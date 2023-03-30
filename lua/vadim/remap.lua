@@ -137,3 +137,6 @@ vim.keymap.set('n', "<leader>tg", ":Telescope pathogen grep_string<CR>",
 
 --nvimtree
 vim.keymap.set('n', '<leader>nt', '<cmd>NvimTreeToggle<CR>', { desc = 'NvimTreeToggle' })
+
+--numeric lines
+vim.keymap.set('n', '<leader>en', ":s:^\\s*\\zs:\\=(line('.')-line(\"'<\")).'. '<Home>", { desc = 'Numeric text' })
