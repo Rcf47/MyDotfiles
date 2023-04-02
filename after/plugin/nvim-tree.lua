@@ -8,7 +8,6 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
-require("nvim-tree").setup()
 
 -- OR setup with some options
 require("nvim-tree").setup({
@@ -18,5 +17,10 @@ require("nvim-tree").setup({
   },
   filters = {
     dotfiles = true,
+  },
+  update_focused_file = {
+    enable = true,
+    update_root = true,
+    ignore_list = {},
   },
 })
