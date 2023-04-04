@@ -57,3 +57,6 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 --clipboard anywhere
 vim.opt.clipboard = "unnamedplus"
+
+--hl line
+vim.opt.cursorline = true
