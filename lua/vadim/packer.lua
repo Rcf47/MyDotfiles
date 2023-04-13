@@ -116,4 +116,7 @@ return require('packer').startup(function(use)
 
   --file browser
   use 'nvim-tree/nvim-tree.lua'
+
+  --auto-session
+  --use 'nyngwang/suave.lua'
 end)
