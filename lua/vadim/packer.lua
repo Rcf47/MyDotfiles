@@ -119,4 +119,5 @@ return require('packer').startup(function(use)
 
   --auto-session
   --use 'nyngwang/suave.lua'
+  use 'natecraddock/sessions.nvim'
 end)
