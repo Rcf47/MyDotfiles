@@ -120,4 +120,7 @@ return require('packer').startup(function(use)
   --auto-session
   --use 'nyngwang/suave.lua'
   use 'natecraddock/sessions.nvim'
+
+  --nvim-comment
+  use 'terrortylor/nvim-comment'
 end)
