@@ -123,4 +123,7 @@ return require('packer').startup(function(use)
 
   --nvim-comment
   use 'terrortylor/nvim-comment'
+
+  --jest.nvim
+  use 'mattkubej/jest.nvim'
 end)
