@@ -126,4 +126,7 @@ return require('packer').startup(function(use)
 
   --jest.nvim
   use 'mattkubej/jest.nvim'
+
+  --delay repeat execution
+  use 'ja-ford/delaytrain.nvim'
 end)
