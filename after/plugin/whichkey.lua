@@ -11,4 +11,5 @@ wk.register({
   ["<leader>e"] = { name = "Numeric line" },
   ["<leader>j"] = { name = "Jest" },
   ["<leader>m"] = { name = "Harpoon" },
+  ["<leader>n"] = { name = "NvimTree" },
 })
