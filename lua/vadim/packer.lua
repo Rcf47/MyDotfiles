@@ -129,4 +129,7 @@ return require('packer').startup(function(use)
 
   --delay repeat execution
   use 'ja-ford/delaytrain.nvim'
+
+  --leap motion plugin
+  use 'ggandor/leap.nvim'
 end)
