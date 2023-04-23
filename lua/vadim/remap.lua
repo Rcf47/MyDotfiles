@@ -47,8 +47,8 @@ vim.keymap.set('n', '<C-a>', 'gg<S-v>G', { desc = 'Select all' })
 -- New tab
 vim.keymap.set('n', 'te', ':tabedit<cr>', { desc = 'new tab' })
 -- Split window
-vim.keymap.set('n', 'ss', ':split<Return><C-w>w', { desc = 'split' })
-vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { desc = ':vsplit' })
+vim.keymap.set('n', '<leader>ss', ':split<Return><C-w>w', { desc = 'split' })
+vim.keymap.set('n', '<leader>sv', ':vsplit<Return><C-w>w', { desc = ':vsplit' })
 
 
 --Insert mode
