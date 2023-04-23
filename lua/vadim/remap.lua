@@ -140,3 +140,6 @@ vim.keymap.set('n', '<leader>nt', '<cmd>NvimTreeToggle<CR>', { desc = 'NvimTreeT
 
 --numeric lines
 vim.keymap.set('n', '<leader>en', ":s:^\\s*\\zs:\\=(line('.')-line(\"'<\")).'. '<Home>", { desc = 'Numeric text' })
+
+--for node js
+vim.keymap.set('n', '<leader>vs', "<cmd>!node %<CR>", { desc = "start Node.js" })
