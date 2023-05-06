@@ -143,3 +143,6 @@ vim.keymap.set('n', '<leader>en', ":s:^\\s*\\zs:\\=(line('.')-line(\"'<\")).'. '
 
 --for node js
 vim.keymap.set('n', '<leader>vs', "<cmd>!node %<CR>", { desc = "start Node.js" })
+
+--toggle numbers
+vim.keymap.set('n', '<leader><leader>n', '<cmd>set relativenumber!<CR>')
