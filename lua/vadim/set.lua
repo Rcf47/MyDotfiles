@@ -61,3 +61,4 @@ vim.opt.clipboard = "unnamedplus"
 
 --hl line
 vim.opt.cursorline = true
+vim.opt.cursorcolumn = true
