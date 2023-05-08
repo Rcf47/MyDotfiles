@@ -146,3 +146,7 @@ vim.keymap.set('n', '<leader>vs', "<cmd>!node %<CR>", { desc = "start Node.js" }
 
 --toggle numbers
 vim.keymap.set('n', '<leader><leader>n', '<cmd>set relativenumber!<CR>')
+
+--start of the line and end of the line
+vim.keymap.set('n', '<leader><leader>s', '^', { desc = "start of the line" })
+vim.keymap.set('n', '<leader><leader>e', '$', { desc = "end of the line" })
