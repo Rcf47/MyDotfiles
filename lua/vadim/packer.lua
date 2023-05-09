@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-ts-autotag'
 
   use { "catppuccin/nvim", as = "catppuccin" }
+  use { 'hardhackerlabs/theme-vim', as = "hardhacker" }
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use 'ThePrimeagen/harpoon'
   use 'mbbill/undotree'
