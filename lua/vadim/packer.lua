@@ -133,4 +133,7 @@ return require('packer').startup(function(use)
 
   --leap motion plugin
   use 'ggandor/leap.nvim'
+
+  --mark plugin
+  use 'chentoast/marks.nvim'
 end)
