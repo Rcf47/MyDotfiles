@@ -150,3 +150,6 @@ vim.keymap.set('n', '<leader><leader>n', '<cmd>set relativenumber!<CR>')
 --start of the line and end of the line
 vim.keymap.set('n', '<leader><leader>s', '^', { desc = "start of the line" })
 vim.keymap.set('n', '<leader><leader>e', '$', { desc = "end of the line" })
+
+--oil open
+vim.keymap.set('n', '<leader><leader>o', '<cmd>Oil<CR>', { desc = "open oil file explorer" })

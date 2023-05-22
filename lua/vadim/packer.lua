@@ -136,4 +136,7 @@ return require('packer').startup(function(use)
 
   --mark plugin
   use 'chentoast/marks.nvim'
+
+  --oil for file system
+  use 'stevearc/oil.nvim'
 end)
