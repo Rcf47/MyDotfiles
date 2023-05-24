@@ -139,4 +139,7 @@ return require('packer').startup(function(use)
 
   --oil for file system
   use 'stevearc/oil.nvim'
+
+  --indent plugin
+  use 'lukas-reineke/indent-blankline.nvim'
 end)
