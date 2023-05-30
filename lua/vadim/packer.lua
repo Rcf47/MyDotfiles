@@ -142,4 +142,7 @@ return require('packer').startup(function(use)
 
   --indent plugin
   use 'lukas-reineke/indent-blankline.nvim'
+
+  --spliting/joining blocks
+  use { 'Wansmer/treesj', requires = { 'nvim-treesitter' } }
 end)
