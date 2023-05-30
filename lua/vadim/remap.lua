@@ -153,3 +153,6 @@ vim.keymap.set('n', '<leader><leader>e', '$', { desc = "end of the line" })
 
 --oil open
 vim.keymap.set('n', '<leader><leader>o', '<cmd>Oil<CR>', { desc = "open oil file explorer" })
+
+--spliting joining blocks treesj
+vim.keymap.set('n', '<leader><leader>t', '<cmd>TSJToggle<CR>', { desc = "Spliting joining blocks" })
