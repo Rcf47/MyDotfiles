@@ -145,4 +145,7 @@ return require('packer').startup(function(use)
 
   --spliting/joining blocks
   use { 'Wansmer/treesj', requires = { 'nvim-treesitter' } }
+
+  --autosave
+  use 'Pocco81/auto-save.nvim'
 end)
