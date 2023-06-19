@@ -14,7 +14,8 @@ wk.register({
   ["<leader>n"] = { name = "NvimTree" },
   ["<leader>v"] = { name = "Others" },
   ["<leader>vc"] = { name = "Code action" },
-  ["<leader>vp"] = {name = 'Open packer'},
-  ["<leader>vr"] = {name = 'Reference and rename'},
-  ["<leader>vw"] = {name = 'Workspace Symbol'},
+  ["<leader>vp"] = { name = 'Open packer' },
+  ["<leader>vr"] = { name = 'Reference and rename' },
+  ["<leader>vw"] = { name = 'Workspace Symbol' },
+  ["<leader>a"] = { name = 'Autosave toggle' },
 })

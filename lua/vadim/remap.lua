@@ -156,3 +156,6 @@ vim.keymap.set('n', '<leader><leader>o', '<cmd>Oil<CR>', { desc = "open oil file
 
 --spliting joining blocks treesj
 vim.keymap.set('n', '<leader><leader>t', '<cmd>TSJToggle<CR>', { desc = "Spliting joining blocks" })
+
+--autosave toggle
+vim.keymap.set('n', '<leader>as', "<cmd>ASToggle<CR>", { desc = "Autosave toggle" })
