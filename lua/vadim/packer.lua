@@ -148,4 +148,7 @@ return require('packer').startup(function(use)
 
   --autosave
   use 'Pocco81/auto-save.nvim'
+
+  --signature
+  use "ray-x/lsp_signature.nvim"
 end)
