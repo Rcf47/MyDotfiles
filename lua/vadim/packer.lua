@@ -150,4 +150,11 @@ return require('packer').startup(function(use)
 
   --signature help with func
   use "ray-x/lsp_signature.nvim"
+
+  --formmater for prettier autosave
+  -- use "mhartington/formatter.nvim"
+  --for new prettier
+  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
 end)
