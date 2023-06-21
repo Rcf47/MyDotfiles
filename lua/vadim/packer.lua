@@ -66,7 +66,6 @@ return require('packer').startup(function(use)
   }
   use 'williamboman/mason.nvim'
 
-  use('prettier/vim-prettier', { run = 'npm install --frozen-lockfile --production' })
 
   use "lukas-reineke/lsp-format.nvim"
   use "tpope/vim-surround"

@@ -45,10 +45,6 @@ vim.opt.formatoptions:append { 'r' }
 vim.g.XkbSwitchEnabled = 1
 vim.g.XkbSwitchLib = '/usr/local/lib/libxkbswitch.so'
 
---For prettier
---vim.g.prettier.autoformat = 1
---vim.g.prettier.autoformat_require_pragma = 0
---
 --Colorizer
 vim.g.colorizer_auto_color = 1
 
