@@ -159,3 +159,6 @@ vim.keymap.set('n', '<leader><leader>t', '<cmd>TSJToggle<CR>', { desc = "Splitin
 
 --autosave toggle
 vim.keymap.set('n', '<leader>as', "<cmd>ASToggle<CR>", { desc = "Autosave toggle" })
+
+--prettier
+vim.keymap.set('n', '<leader>p', '<cmd>Prettier<CR>', { desc = 'Prettier' })
