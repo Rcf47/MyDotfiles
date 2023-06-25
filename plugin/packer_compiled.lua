@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/vadim/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["auto-save.nvim"] = {
-    loaded = true,
-    path = "/home/vadim/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
-    url = "https://github.com/Pocco81/auto-save.nvim"
-  },
   catppuccin = {
     loaded = true,
     path = "/home/vadim/.local/share/nvim/site/pack/packer/start/catppuccin",

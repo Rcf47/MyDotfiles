@@ -146,7 +146,7 @@ return require('packer').startup(function(use)
   use { 'Wansmer/treesj', requires = { 'nvim-treesitter' } }
 
   --autosave
-  use 'Pocco81/auto-save.nvim'
+  --use 'Pocco81/auto-save.nvim'
 
   --signature help with func
   use "ray-x/lsp_signature.nvim"
