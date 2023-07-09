@@ -5,7 +5,7 @@ bufferline.setup({
   options = {
     mode = "tabs",
     numbers = "ordinal",
-    separator_style = 'thin',
+    separator_style = { '', '' },
     always_show_bufferline = false,
     show_buffer_close_icons = false,
     show_close_icon = false,
@@ -14,7 +14,7 @@ bufferline.setup({
   highlights = {
     separator = {
       fg = '#332E41',
-      bg = '#332E41',
+      bg = '#070003',
     },
     separator_selected = {
       fg = '#1E1E28',
