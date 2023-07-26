@@ -135,6 +135,9 @@ vim.keymap.set('n', "<leader>tf", ":Telescope pathogen find_files<CR>",
 vim.keymap.set('n', "<leader>tg", ":Telescope pathogen grep_string<CR>",
   { silent = true, desc = 'Telescope path grep string' })
 
+-- telescope emoji extension
+vim.keymap.set('n', "<leader>te", "<cmd>Telescope emoji<CR>", { desc = 'Telescope emoji' })
+
 --nvimtree
 vim.keymap.set('n', '<leader>nt', '<cmd>NvimTreeToggle<CR>', { desc = 'NvimTreeToggle' })
 
