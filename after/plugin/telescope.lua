@@ -78,6 +78,7 @@ end, { desc = 'Telescope file browser' })
 telescope.load_extension('lazygit')
 telescope.load_extension('pathogen')
 telescope.load_extension('fzf')
+telescope.load_extension('emoji')
 
 local base1 = "#2D3145"
 local base2 = "#32364A"
