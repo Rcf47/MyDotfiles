@@ -32,7 +32,7 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = 'fast format' })
 -- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 -- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
-vim.keymap.set("n", "<leader>s", [[:%s:\<<C-r><C-w>\>:<C-r><C-w>:gI<Left><Left><Left>]], { desc = 'fast substitute' })
+vim.keymap.set("n", "<leader><C-s>", [[:%s:\<<C-r><C-w>\>:<C-r><C-w>:gI<Left><Left><Left>]], { desc = 'fast substitute' })
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = 'add chmod x' })
 
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/vadim/packer.lua<CR>", { desc = 'Open packer.lua' });
