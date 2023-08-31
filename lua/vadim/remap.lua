@@ -138,8 +138,8 @@ vim.keymap.set('n', "<leader>tg", ":Telescope pathogen grep_string<CR>",
 -- telescope emoji extension
 vim.keymap.set('n', "<leader>te", "<cmd>Telescope emoji<CR>", { desc = 'Telescope emoji' })
 
---nvimtree
-vim.keymap.set('n', '<leader>nt', '<cmd>NvimTreeToggle<CR>', { desc = 'NvimTreeToggle' })
+--nvim-tree
+--vim.keymap.set('n', '<leader>nt', '<cmd>NvimTreeToggle<CR>', { desc = 'NvimTreeToggle' })
 
 --numeric lines
 vim.keymap.set('n', '<leader>en', ":s:^\\s*\\zs:\\=(line('.')-line(\"'<\")).'. '<Home>", { desc = 'Numeric text' })
