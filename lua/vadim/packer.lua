@@ -116,7 +116,7 @@ return require('packer').startup(function(use)
   use 'mattn/emmet-vim'
 
   --file browser
-  use 'nvim-tree/nvim-tree.lua'
+  --  use 'nvim-tree/nvim-tree.lua'
 
   --auto-session
   --use 'nyngwang/suave.lua'
