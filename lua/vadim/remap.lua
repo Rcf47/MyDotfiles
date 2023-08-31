@@ -161,7 +161,7 @@ vim.keymap.set('n', '<leader><leader>o', '<cmd>Oil<CR>', { desc = "open oil file
 vim.keymap.set('n', '<leader><leader>t', '<cmd>TSJToggle<CR>', { desc = "Spliting joining blocks" })
 
 --autosave toggle
-vim.keymap.set('n', '<leader>as', "<cmd>ASToggle<CR>", { desc = "Autosave toggle" })
+--vim.keymap.set('n', '<leader>as', "<cmd>ASToggle<CR>", { desc = "Autosave toggle" })
 
 --prettier
 vim.keymap.set('n', '<leader>p', '<cmd>Prettier<CR>', { desc = 'Prettier' })
