@@ -73,3 +73,15 @@ ls.add_snippets("all", {
 ls.add_snippets("lua", {
   snippet("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) })),
 })
+ls.add_snippets("javascript", {
+  snippet({ trig = "fa1", regTrig = true }, fmt(
+    [[
+  ({}) => {{
+    {}
+  }}
+  ]],
+    { i(1), i(2) }))
+}, {
+  type = "autosnippets",
+  key = "all_auto"
+})
