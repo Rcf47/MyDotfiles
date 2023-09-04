@@ -12,6 +12,10 @@ local sn = ls.snippet_node
 local fmt = require("luasnip.extras.fmt").fmt
 local rep = require("luasnip.extras").rep
 
-ls.add_snippets("lua", {
-  snippet("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) })),
-})
+local snippets, autosnippets = {}, {} --}}}
+
+local requireLua = snippet("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) }))
+
+table.insert(snippets, requireLua)
+
+return snippets, autosnippets
