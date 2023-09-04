@@ -12,18 +12,23 @@ local sn = ls.snippet_node
 local fmt = require("luasnip.extras.fmt").fmt
 local rep = require("luasnip.extras").rep
 
+local snippets, autosnippets = {}, {} --}}}
 
-ls.add_snippets("javascript", {
-  snippet({ trig = "fa1", regTrig = true }, fmt(
-    [[
+local arrowFunctionWithBrackets = snippet({ trig = "fa1", regTrig = true }, fmt(
+  [[
   ({}) => {{
     {}
   }}
   ]],
-    { i(1), i(2) })),
-  snippet({ trig = "fa2", regTrig = true }, fmt("({}) => {}",
-    { i(1), i(2) })),
-}, {
-  type = "autosnippets",
-  key = "all_auto"
-})
+  { i(1), i(2) }))
+
+local arrowFunctionWithoutBrackets = snippet(
+  { trig = "fa2", regTrig = true },
+  fmt("({}) => {}", { i(1), i(2) })
+)
+
+
+table.insert(autosnippets, arrowFunctionWithBrackets)
+table.insert(autosnippets, arrowFunctionWithoutBrackets)
+
+return snippets, autosnippets
