@@ -85,3 +85,10 @@ ls.add_snippets("javascript", {
   type = "autosnippets",
   key = "all_auto"
 })
+ls.add_snippets("javascript", {
+  snippet({ trig = "fa2", regTrig = true }, fmt("({}) => {}",
+    { i(1), i(2) }))
+}, {
+  type = "autosnippets",
+  key = "all_auto"
+})
