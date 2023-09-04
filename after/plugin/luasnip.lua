@@ -8,8 +8,7 @@ local i = ls.insert_node
 local fmt = require("luasnip.extras.fmt").fmt
 local rep = require("luasnip.extras").rep
 
-
-
+require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/snippets/" })
 ls.config.set_config {
   -- This tells LuaSnip to remember to keep around the last snippet.
   -- You can jump back into it even if you move outside of the selection
@@ -69,26 +68,4 @@ vim.keymap.set("n", "<leader><leader><leader>s", "<cmd>source ~/.config/nvim/aft
 ls.add_snippets("all", {
   snippet("simple", t "wow, you were right!"),
   snippet("try", c(1, { t { "hello" }, t { "world" }, })),
-})
-ls.add_snippets("lua", {
-  snippet("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) })),
-})
-ls.add_snippets("javascript", {
-  snippet({ trig = "fa1", regTrig = true }, fmt(
-    [[
-  ({}) => {{
-    {}
-  }}
-  ]],
-    { i(1), i(2) }))
-}, {
-  type = "autosnippets",
-  key = "all_auto"
-})
-ls.add_snippets("javascript", {
-  snippet({ trig = "fa2", regTrig = true }, fmt("({}) => {}",
-    { i(1), i(2) }))
-}, {
-  type = "autosnippets",
-  key = "all_auto"
 })
