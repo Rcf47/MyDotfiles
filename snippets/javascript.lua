@@ -104,8 +104,17 @@ local arrowFunctionWithoutBrackets = snippet(
   fmt("({}) => {}", { i(1), i(2) })
 )
 
+local nodeArrowFunctionWithBrackets = snippet({ trig = "fa3", regTrig = true }, fmt(
+  [[
+  (req, res) => {{
+    {}
+  }}
+  ]],
+  { i(1) }))
+
 
 table.insert(autosnippets, arrowFunctionWithBrackets)
 table.insert(autosnippets, arrowFunctionWithoutBrackets)
+table.insert(autosnippets, nodeArrowFunctionWithBrackets)
 
 return snippets, autosnippets
