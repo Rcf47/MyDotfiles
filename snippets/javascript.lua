@@ -112,9 +112,34 @@ local nodeArrowFunctionWithBrackets = snippet({ trig = "fa3", regTrig = true }, 
   ]],
   { i(1) }))
 
+local bunTestsImport = snippet({ trig = "bti1", regTrig = true },
+  fmt("import {{describe, expect, test, {}}} from \"bun:test\"", { i(1) }))
+
+local bunTests = snippet({ trig = "bt1", regTrig = true }, fmt(
+  [[
+  describe("{}",() => {{
+    test("{}", () => {{
+      expect({}).{}
+    }});
+  }})
+  ]],
+  { i(1), i(2), i(3), i(4) }
+))
+
+local bunTest = snippet({ trig = "bt2", regTrig = true }, fmt(
+  [[
+  test("{}", () => {{
+    expect({}).{}
+  }});
+]],
+  { i(1), i(2), i(3) }
+))
 
 table.insert(autosnippets, arrowFunctionWithBrackets)
 table.insert(autosnippets, arrowFunctionWithoutBrackets)
 table.insert(autosnippets, nodeArrowFunctionWithBrackets)
+table.insert(autosnippets, bunTests)
+table.insert(autosnippets, bunTestsImport)
+table.insert(autosnippets, bunTest)
 
 return snippets, autosnippets
