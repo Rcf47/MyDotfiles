@@ -130,7 +130,7 @@ vim.keymap.set('v', '<leader>tg', require("telescope").extensions["pathogen"].gr
 vim.keymap.set('n', "<leader>tlg", ":Telescope pathogen live_grep<CR>",
   { silent = true, desc = 'Telescope path live grep' })
 vim.keymap.set('n', "<leader>tp", ":Telescope pathogen<CR>", { silent = true, desc = 'Telescope pathogen' })
-vim.keymap.set('n', "<leader>tf", ":Telescope pathogen find_files<CR>",
+vim.keymap.set('n', "<leader>tf", ":Telescope pathogen find_files hidden=true<CR>",
   { silent = true, desc = 'Telescope path find files' })
 vim.keymap.set('n', "<leader>tg", ":Telescope pathogen grep_string<CR>",
   { silent = true, desc = 'Telescope path grep string' })
