@@ -167,6 +167,8 @@ return require("packer").startup(function(use)
   --confrom for autoformat
   use("stevearc/conform.nvim")
 
+  --nvim-lint for linters
+  use("mfussenegger/nvim-lint")
   --typescript tools for faster work
   --use {
   -- "pmizio/typescript-tools.nvim",
