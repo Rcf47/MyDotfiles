@@ -165,3 +165,12 @@ vim.keymap.set('n', '<leader><leader>t', '<cmd>TSJToggle<CR>', { desc = "Splitin
 
 --prettier
 vim.keymap.set('n', '<leader>p', '<cmd>Prettier<CR>', { desc = 'Prettier' })
+
+--conform manual format
+vim.keymap.set({ 'n', 'v' }, '<leader><leader>f', function()
+  require("conform").format({
+    lsp_fallback = true,
+    async = false,
+    timeout_ms = 500,
+  })
+end, { desc = "conform format" })
