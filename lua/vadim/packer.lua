@@ -164,7 +164,9 @@ return require("packer").startup(function(use)
     end,
   })
 
+  --confrom for autoformat
   use("stevearc/conform.nvim")
+
   --typescript tools for faster work
   --use {
   -- "pmizio/typescript-tools.nvim",
