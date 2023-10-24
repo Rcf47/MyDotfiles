@@ -65,7 +65,7 @@ return require("packer").startup(function(use)
   })
   use("williamboman/mason.nvim")
 
-  use("lukas-reineke/lsp-format.nvim")
+  --use("lukas-reineke/lsp-format.nvim")
   use("tpope/vim-surround")
 
   --Debug adapter protocol
@@ -152,8 +152,8 @@ return require("packer").startup(function(use)
   --formmater for prettier autosave
   -- use "mhartington/formatter.nvim"
   --for new prettier
-  use("neovim/nvim-lspconfig")
-  use("jose-elias-alvarez/null-ls.nvim")
+  --use("neovim/nvim-lspconfig")
+  --use("jose-elias-alvarez/null-ls.nvim")
   use("MunifTanjim/prettier.nvim")
 
   --markdown-preview install without yarn or npm
