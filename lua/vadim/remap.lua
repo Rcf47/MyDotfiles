@@ -32,10 +32,10 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "fast format" })
 -- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set(
-  "n",
-  "<leader><C-s>",
-  [[:%s:\<<C-r><C-w>\>:<C-r><C-w>:gI<Left><Left><Left>]],
-  { desc = "fast substitute" }
+	"n",
+	"<leader><C-s>",
+	[[:%s:\<<C-r><C-w>\>:<C-r><C-w>:gI<Left><Left><Left>]],
+	{ desc = "fast substitute" }
 )
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "add chmod x" })
 
@@ -65,19 +65,19 @@ vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>", { desc = ":nohlsearch" }
 
 --debugging
 vim.keymap.set("n", "<F5>", function()
-  require("dap").continue()
+	require("dap").continue()
 end, { desc = "continue" })
 vim.keymap.set("n", "<F6>", function()
-  require("dap").step_over()
+	require("dap").step_over()
 end, { desc = "step_over" })
 vim.keymap.set("n", "<F7>", function()
-  require("dap").step_into()
+	require("dap").step_into()
 end, { desc = "step_into" })
 vim.keymap.set("n", "<F8>", function()
-  require("dap").step_out()
+	require("dap").step_out()
 end, { desc = "step_out" })
 vim.keymap.set("n", "<Leader>db", function()
-  require("dap").toggle_breakpoint()
+	require("dap").toggle_breakpoint()
 end, { desc = "toggle breakpoint" })
 
 --debugging dap-ui
@@ -92,10 +92,10 @@ vim.keymap.set("n", "<leader><leader>c", "<cmd>ColorToggle<CR>", { desc = "highl
 
 --myGreetingLua
 vim.keymap.set(
-  "n",
-  "<leader><leader>g",
-  "<cmd>luafile ~/.config/nvim/lua/vadim/mylua.lua<CR>",
-  { desc = "Hello Vadim lua function" }
+	"n",
+	"<leader><leader>g",
+	"<cmd>luafile ~/.config/nvim/lua/vadim/mylua.lua<CR>",
+	{ desc = "Hello Vadim lua function" }
 )
 
 --Diffview
@@ -114,10 +114,10 @@ vim.keymap.set("n", "<leader>hs", "<cmd>Gitsigns stage_hunk<CR>", { desc = "stag
 vim.keymap.set("n", "<leader>hu", "<cmd>Gitsigns undo_stage_hunk<CR>", { desc = "undo_stage_hunk" })
 vim.keymap.set("n", "<leader>hb", "<cmd>Gitsigns blame_line<CR>", { desc = "blame_line" })
 vim.keymap.set(
-  "n",
-  "<leader>hsb",
-  '<cmd>Gitsigns stage_buffer<CR><cmd> echo "stage buffer"<CR>',
-  { desc = "stage_buffer" }
+	"n",
+	"<leader>hsb",
+	'<cmd>Gitsigns stage_buffer<CR><cmd> echo "stage buffer"<CR>',
+	{ desc = "stage_buffer" }
 )
 vim.keymap.set("n", "<leader>hph", "<cmd>Gitsigns preview_hunk<CR>", { desc = "preview_hunk" })
 
@@ -144,29 +144,29 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Undotree" })
 
 --pathogen telescope extension
 vim.keymap.set(
-  "v",
-  "<leader>tg",
-  require("telescope").extensions["pathogen"].grep_string,
-  { desc = "pathogen grep_string" }
+	"v",
+	"<leader>tg",
+	require("telescope").extensions["pathogen"].grep_string,
+	{ desc = "pathogen grep_string" }
 )
 vim.keymap.set(
-  "n",
-  "<leader>tlg",
-  ":Telescope pathogen live_grep<CR>",
-  { silent = true, desc = "Telescope path live grep" }
+	"n",
+	"<leader>tlg",
+	":Telescope pathogen live_grep<CR>",
+	{ silent = true, desc = "Telescope path live grep" }
 )
 vim.keymap.set("n", "<leader>tp", ":Telescope pathogen<CR>", { silent = true, desc = "Telescope pathogen" })
 vim.keymap.set(
-  "n",
-  "<leader>tf",
-  ":Telescope pathogen find_files hidden=true<CR>",
-  { silent = true, desc = "Telescope path find files" }
+	"n",
+	"<leader>tf",
+	":Telescope pathogen find_files hidden=true<CR>",
+	{ silent = true, desc = "Telescope path find files" }
 )
 vim.keymap.set(
-  "n",
-  "<leader>tg",
-  ":Telescope pathogen grep_string<CR>",
-  { silent = true, desc = "Telescope path grep string" }
+	"n",
+	"<leader>tg",
+	":Telescope pathogen grep_string<CR>",
+	{ silent = true, desc = "Telescope path grep string" }
 )
 
 -- telescope emoji extension
@@ -202,14 +202,22 @@ vim.keymap.set("n", "<leader>p", "<cmd>Prettier<CR>", { desc = "Prettier" })
 
 --conform manual format
 vim.keymap.set({ "n", "v" }, "<leader><leader>f", function()
-  require("conform").format({
-    lsp_fallback = true,
-    async = false,
-    timeout_ms = 500,
-  })
+	require("conform").format({
+		lsp_fallback = true,
+		async = false,
+		timeout_ms = 500,
+	})
 end, { desc = "conform format" })
 
 --nvim-lint for manual lint
 vim.keymap.set("n", "<leader><leader>l", function()
-  require("lint").try_lint()
+	require("lint").try_lint()
 end, { desc = "lint with nvim-lint" })
+
+--clear list
+vim.keymap.set(
+	"n",
+	"<leader><leader><leader>c",
+	"<cmd>g/ .*/s//<CR><cmd>nohlsearch<CR>gg",
+	{ desc = "fast clear list for practice" }
+)
