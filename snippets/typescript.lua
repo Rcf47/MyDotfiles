@@ -146,11 +146,37 @@ local bunTest = snippet(
 	)
 )
 
+local leetcodeTest = snippet(
+	{ trig = "leetcodetest", regTrig = true },
+	fmt(
+		[[
+import {{beforeAll ,describe, expect, test, }} from "bun:test"
+
+ describe("leetcode tests",() => {{
+   let case1;
+   let case2;
+    beforeAll(() => {{
+      case1 = {};
+      case2 = {};
+    }})
+    test("add case1 with {}", () => {{
+      expect({}).{}
+    }});
+    test("add case2 with {}", () => {{
+      expect({}).{}
+    }});
+  }})
+    ]],
+		{ i(1), i(2), i(3), i(4), i(5), i(6), i(7), i(8) }
+	)
+)
+
 table.insert(autosnippets, arrowFunctionWithBrackets)
 table.insert(autosnippets, arrowFunctionWithoutBrackets)
 table.insert(autosnippets, nodeArrowFunctionWithBrackets)
 table.insert(autosnippets, bunTests)
 table.insert(autosnippets, bunTestsImport)
 table.insert(autosnippets, bunTest)
+table.insert(autosnippets, leetcodeTest)
 
 return snippets, autosnippets
