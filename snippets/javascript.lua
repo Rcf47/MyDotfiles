@@ -146,7 +146,7 @@ local bunTest = snippet(
 	)
 )
 local leetcodeTest = snippet(
-	{ trig = "leetcodetest", regTrig = true },
+	{ trig = "leetcodetestsnippet", regTrig = true },
 	fmt(
 		[[
 import {{beforeAll ,describe, expect, test, }} from "bun:test"
