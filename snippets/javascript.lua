@@ -170,6 +170,25 @@ import {{beforeAll ,describe, expect, test, }} from "bun:test"
 	)
 )
 
+local readline = snippet(
+	{ trig = "readlinesnippet", regTrig = true },
+	fmt(
+		[[
+const readline = require("readline");
+
+const rl = readline.createInterface({{
+  input: process.stdin,
+  output: process.stdout
+}});
+
+rl.on("line", (input) => {{
+  {}
+}});
+]],
+		{ i(1) }
+	)
+)
+
 table.insert(autosnippets, arrowFunctionWithBrackets)
 table.insert(autosnippets, arrowFunctionWithoutBrackets)
 table.insert(autosnippets, nodeArrowFunctionWithBrackets)
@@ -177,5 +196,6 @@ table.insert(autosnippets, bunTests)
 table.insert(autosnippets, bunTestsImport)
 table.insert(autosnippets, bunTest)
 table.insert(autosnippets, leetcodeTest)
+table.insert(autosnippets, readline)
 
 return snippets, autosnippets
