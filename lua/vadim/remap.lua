@@ -79,7 +79,15 @@ end, { desc = "step_out" })
 vim.keymap.set("n", "<Leader>db", function()
 	require("dap").toggle_breakpoint()
 end, { desc = "toggle breakpoint" })
-
+vim.keymap.set("n", "<leader>da", function()
+	require("dapui").elements.watches.add()
+end, { desc = "dapui add watch" })
+vim.keymap.set("n", "<leader>dd", function()
+	require("dapui").elements.watches.remove()
+end, { desc = "dapui remove watch" })
+vim.keymap.set("n", "<leader>de", function()
+	require("dapui").eval()
+end, { desc = "dapui eval(calculate) expression" })
 --debugging dap-ui
 vim.keymap.set("n", "<leader>o", "<cmd>lua require('dapui').toggle() <CR>", { desc = "toggle dapui" })
 
