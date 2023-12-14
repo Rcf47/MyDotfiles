@@ -18,4 +18,5 @@ wk.register({
 	["<leader>vr"] = { name = "Reference and rename" },
 	["<leader>vw"] = { name = "Workspace Symbol" },
 	["<leader>a"] = { name = "Autosave toggle" },
+	["<leader>i"] = { name = "Indent-blankline" },
 })

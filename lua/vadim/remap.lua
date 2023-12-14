@@ -229,3 +229,6 @@ vim.keymap.set(
 	"<cmd>g/ .*/s//<CR><cmd>nohlsearch<CR>gg",
 	{ desc = "fast clear list for practice" }
 )
+
+--IBL toggle
+vim.keymap.set("n", "<leader>it", "<cmd>IBLToggle<CR>", { desc = "IBL Toggle" })
