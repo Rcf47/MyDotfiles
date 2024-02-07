@@ -232,3 +232,6 @@ vim.keymap.set(
 
 --IBL toggle
 vim.keymap.set("n", "<leader>it", "<cmd>IBLToggle<CR>", { desc = "IBL Toggle" })
+
+--neovim save+close
+vim.keymap.set("n", "<M-c>", ":wq<CR>", { desc = "Save and close" })
