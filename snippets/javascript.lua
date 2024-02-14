@@ -92,7 +92,7 @@ for (let {} = 0; {} < {}; {}++) {{
 ) --}}}
 
 local arrowFunctionWithBrackets = snippet(
-	{ trig = "fa1", regTrig = true },
+	{ trig = "fa2", regTrig = true },
 	fmt(
 		[[
   ({}) => {{
@@ -103,7 +103,7 @@ local arrowFunctionWithBrackets = snippet(
 	)
 )
 
-local arrowFunctionWithoutBrackets = snippet({ trig = "fa2", regTrig = true }, fmt("({}) => {}", { i(1), i(2) }))
+local arrowFunctionWithoutBrackets = snippet({ trig = "fa1", regTrig = true }, fmt("({}) => {}", { i(1), i(2) }))
 
 local nodeArrowFunctionWithBrackets = snippet(
 	{ trig = "fa3", regTrig = true },
