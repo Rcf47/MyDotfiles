@@ -14,7 +14,7 @@ local rep = require("luasnip.extras").rep
 
 local snippets, autosnippets = {}, {} --}}}
 
-local arrowFunc = snippet("fa1", t("{} => ()"))
+local arrowFunc = snippet("fa1", t("() => {}"))
 
 table.insert(autosnippets, arrowFunc)
 
