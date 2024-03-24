@@ -238,3 +238,6 @@ vim.keymap.set("n", "<M-c>", ":wq<CR>", { desc = "Save and close" })
 
 --neovim close
 vim.keymap.set("n", "<M-q>", ":q<CR>", { desc = "Close window" })
+
+-- ; in the end
+vim.keymap.set("n", "<leader>;", "<S-$>a;<ESC>", { desc = "my snippet for ; in the end" })
