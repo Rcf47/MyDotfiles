@@ -182,4 +182,7 @@ return require("packer").startup(function(use)
 	use({
 		"Exafunction/codeium.vim",
 	})
+
+	--bqf
+	use({ "kevinhwang91/nvim-bqf" })
 end)
