@@ -42,6 +42,9 @@ lsp.on_attach(function(client, bufnr)
 		return { desc = description, buffer = bufnr, remap = false }
 	end
 	enable_format_on_save(client, bufnr)
+	vim.keymap.set("n", "gr", function()
+		vim.lsp.buf.references()
+	end, optsFunc("Go references"))
 	vim.keymap.set("n", "gd", function()
 		vim.lsp.buf.definition()
 	end, optsFunc("Go definition"))
