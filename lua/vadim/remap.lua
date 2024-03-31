@@ -241,3 +241,20 @@ vim.keymap.set("n", "<M-q>", ":q<CR>", { desc = "Close window" })
 
 -- ; in the end
 vim.keymap.set("n", "<leader>;", "<S-$>a;<ESC>", { desc = "my snippet for ; in the end" })
+
+--codeium autocomplete
+vim.keymap.set("i", "<C-g>", function()
+	return vim.fn["codeium#Accept"]()
+end, { expr = true, silent = true })
+vim.keymap.set("i", "<C-h>", function()
+	return vim.fn["codeium#CycleCompletions"](1)
+end, { expr = true, silent = true })
+vim.keymap.set("i", "<C-l>", function()
+	return vim.fn["codeium#CycleCompletions"](-1)
+end, { expr = true, silent = true })
+vim.keymap.set("i", "<C-x>", function()
+	return vim.fn["codeium#Clear"]()
+end, { expr = true, silent = true })
+vim.keymap.set("i", "<C-f>", function()
+	return vim.fn["codeium#Complete"]()
+end, { expr = true, silent = true })
