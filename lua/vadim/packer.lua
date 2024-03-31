@@ -70,7 +70,7 @@ return require("packer").startup(function(use)
 
 	--Debug adapter protocol
 	use("mfussenegger/nvim-dap")
-	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } })
 	use("folke/neodev.nvim") --for dap-ui
 	use({ "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } })
 	use({
@@ -177,4 +177,7 @@ return require("packer").startup(function(use)
 	-- require("typescript-tools").setup {}
 	--end,
 	--}
+	use({
+		"Exafunction/codeium.vim",
+	})
 end)
