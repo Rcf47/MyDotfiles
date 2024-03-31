@@ -177,6 +177,8 @@ return require("packer").startup(function(use)
 	-- require("typescript-tools").setup {}
 	--end,
 	--}
+
+	--codeium
 	use({
 		"Exafunction/codeium.vim",
 	})
