@@ -21,7 +21,7 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 --vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
-vim.keymap.set("i", "<C-c>", "<Esc>", { desc = "Normal mode in insert menu" })
+--vim.keymap.set("i", "<C-c>", "<Esc>", { desc = "Normal mode in insert menu" })
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "fast format" })
@@ -242,6 +242,8 @@ vim.keymap.set("n", "<M-q>", ":q<CR>", { desc = "Close window" })
 -- ; in the end
 vim.keymap.set("n", "<leader>;", "<S-$>a;<ESC>", { desc = "my snippet for ; in the end" })
 
+--nvim-cmp
+vim.keymap.set("i", "<C-c>", "<cmd>lua require('cmp').close() <cr>")
 --codeium autocomplete
 vim.keymap.set("i", "<C-g>", function()
 	return vim.fn["codeium#Accept"]()
