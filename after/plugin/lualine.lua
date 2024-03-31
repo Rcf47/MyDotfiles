@@ -3,6 +3,9 @@ if not status then
 	return
 end
 
+local function codium()
+	return vim.api.nvim_call_function("codeium#GetStatusString", {})
+end
 vim.g.lualine_xkblayout_codes = {
 	["2SetKorean"] = "KR",
 	["Chinese"] = "CN",
@@ -42,6 +45,7 @@ lualine.setup({
 				},
 			},
 			"encoding",
+			{ codium },
 			"filetype",
 		},
 		lualine_y = { "progress" },
