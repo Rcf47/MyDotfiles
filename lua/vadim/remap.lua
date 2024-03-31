@@ -244,7 +244,9 @@ vim.keymap.set("n", "<leader>;", "<S-$>a;<ESC>", { desc = "my snippet for ; in t
 
 --nvim-cmp
 vim.keymap.set("i", "<C-c>", "<cmd>lua require('cmp').close() <cr>")
+
 --codeium autocomplete
+vim.keymap.set("n", "<leader><leader>m", "<cmd>CodeiumManual<CR>", { desc = "Codeium manual" })
 vim.keymap.set("i", "<C-g>", function()
 	return vim.fn["codeium#Accept"]()
 end, { expr = true, silent = true })
