@@ -12,7 +12,7 @@ wk.register({
 	["<leader>j"] = { name = "Jest" },
 	["<leader>m"] = { name = "Harpoon" },
 	["<leader>n"] = { name = "NvimTree" },
-	["<leader>v"] = { name = "Others" },
+	["<leader>v"] = { name = "LSP and Others" },
 	["<leader>vc"] = { name = "Code action" },
 	["<leader>vp"] = { name = "Open packer" },
 	["<leader>vr"] = { name = "Reference and rename" },
